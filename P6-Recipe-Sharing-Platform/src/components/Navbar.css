@@ -1,0 +1,85 @@
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px; /* Adjusted padding */
+    background: #78297b;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1400px; /* Limit width for a centered look */
+    margin: 20px auto; /* Centers the navbar */
+    border-radius: 10px; /* Smooth rounded edges */
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-left: 15px; /* Moved to right */
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 18px;
+    margin-right: 15px; /* Moved to left */
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    padding: 8px 14px; /* Adjusted padding */
+    border-radius: 8px;
+    transition: 0.3s ease;
+    background: #e3f2fd;
+}
+
+/* Active/Hover Effect */
+.nav-links a:hover {
+    background: #a8dadc;
+}
+
+/* User & Logout Button */
+.user {
+    font-size: 16px;
+    font-weight: 500;
+    color: #555;
+    margin-right: 10px;
+}
+
+/* Login Button (moved slightly left) */
+.logout-btn {
+    background: #ff6b6b;
+    color: white;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin-right: -10px; /* Moves login button left */
+}
+
+.logout-btn:hover {
+    background: #e63946;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
